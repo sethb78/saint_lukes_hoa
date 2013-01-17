@@ -1,0 +1,33 @@
+@import 'universal_css';
+
+body {  min-height: 800px;
+  padding-top: 60px;
+@include filter-gradient($outside_color: #964609, $middle_color: #debfa9);
+  background-repeat: repeat;
+}
+
+.container {
+  border: 3px solid white;
+  background-image: none;
+  background-color: #debfa9;
+   background-size: cover;
+}
+
+#main-image{
+  float: right;
+ h1 {
+    position: relative;
+    height: 169px;
+    width: 225px;
+    overflow: hidden;
+    margin: auto;
+    span {
+    	position: absolute;
+        margin-left: -1%;
+      	width: 102%;
+      	height: 100%;
+	    background-image: url(facade.jpg);
+      	background-size: cover;
+      	background-repeat: no-repeat;
+    }
+}}

@@ -1,0 +1,24 @@
+@import "bootstrap";
+
+@mixin background_image($bottom_color,$top_color) {
+   	background-image: linear-gradient( bottom, $bottom_color, $top_color 50%);
+	background-image: -o-linear-gradient( bottom, $bottom_color, $top_color 50%);
+	background-image: -moz-linear-gradient( bottom, $bottom_color, $top_color 50%);
+	background-image: -webkit-linear-gradient( bottom, $bottom_color, $top_color 50%);
+	background-image: -ms-linear-gradient( bottom, $bottom_color, $top_color 50%);
+	background-image: -webkit-gradient( linear, bottom, left top, color-stop(0, $bottom_color), color-stop(1, $top_color));
+}
+
+@mixin filter-gradient($outside_color, $middle_color) {
+	background: -moz-linear-gradient(top, $outside-color 0%, $middle-color 50%, $outside-color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$outside-color), color-stop(50%,$middle-color), color-stop(100%,$outside-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, $outside-color 0%,$middle-color 50%,$outside-color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, $outside-color 0%,$middle-color 50%,$outside-color 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, $outside-color 0%,$middle-color 50%,$outside-color 100%); /* IE10+ */
+	background: linear-gradient(to bottom, $outside-color 0%,$middle-color 50%,$outside-color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$outside-color', endColorstr='$middle-color',GradientType=0 ); /* IE6-9 */
+}
+
+.center {
+	text-align: center;
+}
