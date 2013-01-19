@@ -1,0 +1,13 @@
+var C_BORDERPROP = 'Border properties';
+var C_BORDERPROPINNER = 'Inner border properties';
+var C_BORDERPROPOUTER = 'Outer border properties';
+var C_BOTTOMLEFT = 'Bottom left';
+var C_BOTTOMMIDDLE = 'Bottom middle';
+var C_BOTTOMRIGHT = 'Bottom right';
+var C_NOSHADOW = 'No shadow';
+var C_PREVIEWCLOSE = 'close preview';
+var C_TOOLHIDE = 'hide tools';
+var C_TOOLSHOW = 'show tools';
+var C_TOPLEFT = 'Top left';
+var C_TOPMIDDLE = 'Top middle';
+var C_TOPRIGHT = 'Top right';

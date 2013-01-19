@@ -1,0 +1,92 @@
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	width:		1020px;		/* width needed weird IE bug */
+}
+
+.dynamic-tab-pane-control .tab-row .tab {
+
+	width:			150px;
+	height:			22px;
+	background: 		#2f2f2f;
+	border: 		1px #383838 solid;
+	
+	position:		relative;
+	top:			0;
+	display:		inline;
+	float:			left;
+	overflow:		hidden;
+	
+	cursor:			pointer;
+	cursor:			hand;
+
+	margin:			1px -1px 1px 2px;
+	padding:		5px 0px 0px 0px;
+	border-bottom: 0px;
+
+	z-index:		1;
+	font:			11px Verdana, Tahoma,  Arial, Helvetica;
+	white-space:		nowrap;
+	text-align:		center;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected {
+	width:			200px !important;
+	height:			24px !important;
+
+	z-index:		3;
+	padding:		5px 0 0px 0;
+	margin:			1px -3px -3px 0px;
+	top:			-2px;
+	font:			11px Verdana, Tahoma,  Arial, Helvetica;
+	color:			#ffffff;
+	background: 		#383838 !important;
+	border-color: 		#5d5d5d;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected a {
+	color:			#ffffff !important;
+}
+
+.dynamic-tab-pane-control .tab-row .tab a {
+	font:			14px Arial, Helvetica;
+	font-weight:		bold;
+	color:			#808080;
+	text-decoration:	none;
+	cursor:			pointer;
+	cursor:			hand;
+}
+
+.dynamic-tab-pane-control .tab-row .tab.hover {
+	font:			11px Verdana, Tahoma,  Arial, Helvetica;
+	width:			150px;
+	height:			22px;
+	background: 		#2f2f2f;
+	cursor:			pointer;
+	cursor:			hand;
+}
+
+
+.dynamic-tab-pane-control .tab-page {
+	clear:			both;
+	border:			1px #5d5d5d solid;
+	background:		#383838;
+	z-index:		2;
+	position:		relative;
+	top:			-2px;
+
+	font:			11px Verdana, Tahoma,  Arial, Helvetica;
+	color:			#eeeeee;
+
+	padding-top:		10px;
+	padding-bottom:		10px;
+	width: 			1020px;
+	min-height: 		260px;
+	height: 		auto !important;
+	height: 		260px;
+	float:			left;
+}
+
+.dynamic-tab-pane-control .tab-row {
+	z-index:		1;
+	white-space:		nowrap;
+}

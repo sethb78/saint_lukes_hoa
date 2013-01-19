@@ -1,4 +1,7 @@
 @import "bootstrap";
+$maroon: #422121;
+$light-grey: #B3B3B3;
+
 
 @mixin background_image($bottom_color,$top_color) {
    	background-image: linear-gradient( bottom, $bottom_color, $top_color 50%);
@@ -17,6 +20,18 @@
 	background: -ms-linear-gradient(top, $outside-color 0%,$middle-color 50%,$outside-color 100%); /* IE10+ */
 	background: linear-gradient(to bottom, $outside-color 0%,$middle-color 50%,$outside-color 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$outside-color', endColorstr='$middle-color',GradientType=0 ); /* IE6-9 */
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: $maroon;
+}
+a:hover {
+	color: $light-grey;
+	background-color: $maroon;
 }
 
 .center {

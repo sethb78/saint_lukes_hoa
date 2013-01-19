@@ -6,16 +6,32 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-          <div class="container">
-
-  		<div class="row-fluid banner">
-
-  				<div id="main-image"><h1><span></span>Saint Lukes Lofts</h1></div>
- 
-  		</div>
-
-
-</div>
-</body>
+	<body>
+	     <div class="container">
+	 		<div class="row-fluid banner">
+				<div id="main-image"><h1><span></span>Saint Lukes Lofts</h1></div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span2 left-side-bar">
+					<div class="span12">
+						<p><%= link_to "Login", '#'%> | <%= link_to "Register", '#'%></p>
+						<h3>Welcome</h3>
+						<p><%= link_to "Home", '#' %></p>
+						<p><%= link_to "Location", '#' %></p>
+						<p><%= link_to "Contact Us", '#' %></p>
+						<h3>Residents</h3>
+						<p><%= link_to "Board Memebers", '#' %></p>
+						<p><%= link_to "Residents", '#' %></p>
+						<p><%= link_to "Minutes", '#' %></p>
+						<p><%= link_to "Documents", '#' %></p>
+					</div>
+				</div>
+				<div class="span7">
+					<p> Welcome to the</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

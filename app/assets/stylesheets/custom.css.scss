@@ -1,20 +1,22 @@
 @import 'universal_css';
 
-body {  min-height: 800px;
+body {  
+  background-color: red;
+  min-height: 800px;
   padding-top: 60px;
-@include filter-gradient($outside_color: #945f38, $middle_color: #debfa9);
+@include filter-gradient($outside_color: #666666, $middle_color: lighten(#666666, 50%));
   background-repeat: repeat;
 }
 
 .container {
+  background-color: lighten (#666666, 50%);
   background-image: none;
-  background-color: #debfa9;
    background-size: cover;
 }
 
 #main-image{
   float: right;
- h1 {
+  h1 {
     position: relative;
     height: 169px;
     width: 225px;
@@ -24,9 +26,26 @@ body {  min-height: 800px;
       background-image: url("facade.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      height: 97%;
-      margin: 1% 0 0 -1%;
+      height: 100%;
+      margin-left: -1%;
       position: absolute;
-      width: 100%;
+      width: 103%;
     }
-}}
+  }
+}
+.left-side-bar {
+  background-color: #4C4C4C;
+  margin: 2%;
+  padding: .5%;
+  border: 1px solid #422121;
+  h3 {
+    color: white;
+    line-height: 30px;
+    margin: 5% 0 2%;
+    border-bottom: 1px dashed $maroon;
+  }
+  .span12 {
+    background-color: #B3B3B3;
+    text-align: center;
+  }
+}

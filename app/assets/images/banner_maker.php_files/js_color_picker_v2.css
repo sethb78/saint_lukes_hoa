@@ -1,0 +1,69 @@
+#dhtmlgoodies_colorPicker{
+	background: #ffffff;
+	border: 1px solid #808080;
+	width: 170px;
+	position: absolute;
+	z-index: 10;
+}
+
+#dhtmlgoodies_colorPicker .colorPicker_topRow{
+	padding: 2px 0 2px 2px;
+	border-bottom: 1px solid #000000;	
+	background: #808080;
+	width: 168px;
+	height: 16px;
+}
+
+#dhtmlgoodies_colorPicker .colorPicker_statusBar{
+	padding: 2px 0 2px 2px;
+	border-top: 1px solid #000000;	
+	background: #ffffff;
+	width: 168px;
+	height: 13px;
+	clear:both;
+}
+
+#dhtmlgoodies_colorPicker div.colorSquare{
+	width: 5px;
+	height: 5px;
+	margin: 0px;
+	padding: 0px;
+	cursor: crosshair;
+	float: left;
+}
+
+.colorPickerTab_inactive,.colorPickerTab_active{
+	height: 17px;
+	padding-left: 4px;
+}
+
+.colorPickerTab_inactive span, .colorPickerTab_active span{
+	font: 11px arial;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 1px 0 0 4px;
+	float: left;
+	-moz-user-select: no;
+}
+
+.colorPickerCloseButton, .colorPickerCloseButtonHover {
+	right: 1px;
+	top: 1px;
+	font: 12px Arial;
+	font-weight: bold;
+	color: #000000;
+	padding: 1px;
+	cursor: pointer;
+	text-align:center;
+	width: 11px;
+	height: 11px;
+	position: absolute;
+}
+
+.colorPickerCloseButtonHover {
+	color: #ffffff;
+}
+
+#colorPicker_statusBarTxt{
+	font: 11px Arial;
+}
