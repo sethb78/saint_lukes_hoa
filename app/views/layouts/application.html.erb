@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hoa</title>
+  <title>Saint Lukes Lofts Homeownders Association</title>
+  		<%= favicon_link_tag "favicon.ico" %>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -17,11 +19,11 @@
 				<div class="span2 left-side-bar">
 					<div class="span12">
 						<p><%= link_to "Login", '#'%> | <%= link_to "Register", '#'%></p>
-						<h3>Welcome</h3>
+						<h3><%= image_tag('welcome.jpg') %></h3>
 						<p><%= link_to "Home", '#' %></p>
 						<p><%= link_to "Location", '#' %></p>
 						<p><%= link_to "Contact Us", '#' %></p>
-						<h3>Residents</h3>
+						<h3><%= image_tag('residents.jpg') %></h3>
 						<p><%= link_to "Board Memebers", '#' %></p>
 						<p><%= link_to "Residents", '#' %></p>
 						<p><%= link_to "Minutes", '#' %></p>
@@ -29,7 +31,13 @@
 					</div>
 				</div>
 				<div class="span7">
-					<p> Welcome to the</p>
+					<%= yield %>
+				</div>
+				<div class="span2 right-side-bar">
+					<div class="span12">
+						<h3><%= image_tag('upcoming.jpg') %></h3>
+						<p><%= image_tag('calendar.jpg') %></p>
+					</div>
 				</div>
 			</div>
 		</div>
