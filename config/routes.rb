@@ -1,7 +1,15 @@
 Hoa::Application.routes.draw do
+
+  devise_for :users
+
   resources :static_pages
+  resources :upcoming_events
+  resources :users do
+    get 'approve', :on => :member
+  end
 
   root to:'static_pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

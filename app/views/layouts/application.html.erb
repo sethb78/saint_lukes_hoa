@@ -10,6 +10,17 @@
 </head>
 	<body>
 	     <div class="container">
+	     	<div class="span12">
+	     		<div id="user_nav">
+	     			<% if user_signed_in? %>
+	     				Signed in as <%= current_user.email %>. Not you?
+	     				<%= link_to "Sign Out", destroy_user_session_path %>
+	     			<% else %>
+	     				<%= link_to "Register", new_user_registration_path %> or
+	     				<%= link_to "Sign In", new_user_session_path %>
+	     			<% end %>
+	     		</div>
+	     	</div>
 	 		<div class="row-fluid banner">
 				<div id="main-image"><h1><span></span>Saint Lukes Lofts</h1></div>
 			</div>
@@ -18,7 +29,13 @@
 			<div class="row-fluid">
 				<div class="span2 left-side-bar">
 					<div class="span12">
-						<p><%= link_to "Login", '#'%> | <%= link_to "Register", '#'%></p>
+						<p><% if user_signed_in? %>
+	     				Signed in as <%= current_user.email %>. Not you?
+	     				<%= link_to "Sign Out", destroy_user_session_path %>
+	     			<% else %>
+	     				<%= link_to "Register", new_user_registration_path %> or
+	     				<%= link_to "Sign In", new_user_session_path %>
+	     			<% end %></p>
 						<h3><%= image_tag('welcome.jpg') %></h3>
 						<p><%= link_to "Home", '#' %></p>
 						<p><%= link_to "Location", '#' %></p>
@@ -30,11 +47,20 @@
 						<p><%= link_to "Documents", '#' %></p>
 					</div>
 				</div>
-				<div class="span8">
+				<div class="span8 main-info">
+					<% flash.each do |name, msg| %>
+				        <%= content_tag :div, msg, id: "flash_#{name}" %>
+				    <% end %>
 					<%= yield %>
 				</div>
 				<div class="span2 right-side-bar">
 					<div class="span12">
+						<% if 2==2 %>
+							<div id="admin-link">
+								<h3>Administrative</h3>
+								<p><%= link_to "Calendar", upcoming_events_path %>
+							</div>
+						<% end %>
 						<h3><%= image_tag('upcoming.jpg') %></h3>
 						<p><%= image_tag('calendar.jpg') %></p>
 					</div>
@@ -43,3 +69,4 @@
 		</div>
 	</body>
 </html>
+

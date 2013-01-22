@@ -1,0 +1,24 @@
+@import 'universal_css';
+
+.user-index {
+	background-color: white;
+	padding: 0 5%;
+	text-align: center;
+	a {
+		color: lighten(blue, 10%)!important;
+	};
+	table {
+		margin-top: 5%;
+		width: 100%;
+	}
+	td {
+		width: 30%;
+	}
+	th {
+		border-bottom: 1px solid black;
+	}
+	a:active{
+		outline: 1px red
+	}
+
+}
