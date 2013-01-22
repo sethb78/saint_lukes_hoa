@@ -10,6 +10,8 @@ Hoa::Application.routes.draw do
 
   root to:'static_pages#home'
 
+  match '/location', to: 'static_pages#location'
+  match '/contact', to: 'contact_us/contacts#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

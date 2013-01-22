@@ -68,7 +68,7 @@ body {
   }
 }
 
-
-
-
-
+.active {
+  background-color: darken($light-grey, 20%);
+  color: lighten($maroon, 20%);
+}

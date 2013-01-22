@@ -18,10 +18,12 @@
 				<td> <%= user.email %> </td>
 				<% if user.approved == false %>
 					<td> <%= link_to "approve", approve_user_path(user)%> </td>
+				<% else %>
+					<td></td>
 				<% end %>
+				<td><%= link_to "delete", user, method: :delete, data: { confirm: "You sure, this will delete the user's entry?" } %></td>
 			</tr>
-			<% end %>
-
+		<% end %>
 	</table>
 </div>
 

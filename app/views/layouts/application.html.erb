@@ -12,13 +12,7 @@
 	     <div class="container">
 	     	<div class="span12">
 	     		<div id="user_nav">
-	     			<% if user_signed_in? %>
-	     				Signed in as <%= current_user.email %>. Not you?
-	     				<%= link_to "Sign Out", destroy_user_session_path %>
-	     			<% else %>
-	     				<%= link_to "Register", new_user_registration_path %> or
-	     				<%= link_to "Sign In", new_user_session_path %>
-	     			<% end %>
+	     			<%= render 'layouts/user_nav' %>
 	     		</div>
 	     	</div>
 	 		<div class="row-fluid banner">
@@ -29,22 +23,7 @@
 			<div class="row-fluid">
 				<div class="span2 left-side-bar">
 					<div class="span12">
-						<p><% if user_signed_in? %>
-	     				Signed in as <%= current_user.email %>. Not you?
-	     				<%= link_to "Sign Out", destroy_user_session_path %>
-	     			<% else %>
-	     				<%= link_to "Register", new_user_registration_path %> or
-	     				<%= link_to "Sign In", new_user_session_path %>
-	     			<% end %></p>
-						<h3><%= image_tag('welcome.jpg') %></h3>
-						<p><%= link_to "Home", '#' %></p>
-						<p><%= link_to "Location", '#' %></p>
-						<p><%= link_to "Contact Us", '#' %></p>
-						<h3><%= image_tag('residents.jpg') %></h3>
-						<p><%= link_to "Board Memebers", '#' %></p>
-						<p><%= link_to "Residents", '#' %></p>
-						<p><%= link_to "Minutes", '#' %></p>
-						<p><%= link_to "Documents", '#' %></p>
+						<%= render 'layouts/left_side_bar' %>
 					</div>
 				</div>
 				<div class="span8 main-info">
