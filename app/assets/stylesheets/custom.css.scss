@@ -43,7 +43,7 @@ body {
         }
   }
 }
-.left-side-bar, .right-side-bar, .main-info {
+.left-side-bar, .right-side-bar, .mid-left, .mid-right {
   background-color: #4C4C4C;
   margin: 5% 0 2% 0;
   padding: .5%;
@@ -54,7 +54,7 @@ body {
     margin: 5% 0 2%;
     border-bottom: 1px dashed $maroon;
   }
-  .span12 {
+  .span12, .span6 {
     margin-left: 0;
     margin-bottom: 2%;
     background-color: #B3B3B3;
@@ -68,7 +68,10 @@ body {
   }
 }
 
-.active {
-  background-color: darken($light-grey, 20%);
-  color: lighten($maroon, 20%);
+.mid-left {
+  .span12 {
+    height: 400px;
+  }
+
 }
+
