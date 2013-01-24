@@ -1,1 +1,0 @@
-link_to @document.path, target: 'blank'
