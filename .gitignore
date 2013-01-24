@@ -14,4 +14,3 @@
 /log/*.log
 /tmp
 hours.txt
-config/application.yml
