@@ -30,17 +30,6 @@ Hoa::Application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
-
-  task :setup do
-    run "mkdir -p #{shared_path}/config"
-    template "application.yml.erb", "#{shared_path}/config/application.yml"
-  end
-  
-  before 'deploy:assets:precompile' do
-    run "ln -s #{shared_path}/config/application.yml #{release_path}/config/application.yml"
-  end
-
-
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
