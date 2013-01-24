@@ -6,6 +6,7 @@ gem 'devise'
 gem 'contact_us'
 gem "activeadmin"
 gem "figaro"
+gem 'heroku'
 
 
 group :development, :test do
