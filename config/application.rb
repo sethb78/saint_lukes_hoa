@@ -15,7 +15,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-APP_CONFIG = YAML.load(ERB.new(IO.read(File.expand_path('../config.yml', __FILE__))).result)[Rails.env]
+
 
 module Hoa
   class Application < Rails::Application
