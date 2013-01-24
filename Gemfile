@@ -5,6 +5,7 @@ gem 'bootstrap-sass', '2.1'
 gem 'devise'
 gem 'contact_us'
 gem "activeadmin"
+gem "figaro"
 
 
 group :development, :test do
