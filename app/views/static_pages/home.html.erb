@@ -1,9 +1,47 @@
-<div class="span6 mid-left">
-    <div class="span12">
-        <h3>Forms</h3>
-
-
-<p id="pdf_link"><%= link_to "Download Invoice (PDF)", "By-Laws.pdf" %></p>
-
-    </div>
-</div>
+<% if user_signed_in? %>
+	<div class="document-index">
+		<div class="row-fluid">
+			<div class="span6">
+			    <div class="span12">
+			        <h3>Rules and Regulations</h3>
+			        <% @documents_rules.each do |document| %>
+						<p> <%= document.title %> <%= link_to image_tag('pdf.png'), document.path, target: "blank" %></p>
+					<% end %>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6">
+				<div class="span12">
+					<h3>Other Documents</h3>
+					<% @documents_other.each do |document| %>
+					<p> <%= document.title %> <%= link_to image_tag('pdf.png'), document.path, target: "blank" %></p>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+<% else %>
+	<div class="document-index">
+		<div class="row-fluid">
+			<div class="span6">
+			    <div class="span12">
+			        <h3>Rules and Regulations</h3>
+			        <% @documents_rules.each do |document| %>
+						<p> <%= document.title %> <%= link_to image_tag('pdf.png'), document %></p>
+					<% end %>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6">
+				<div class="span12">
+					<h3>Other Documents</h3>
+					<% @documents_other.each do |document| %>
+					<p> <%= document.title %> <%= link_to image_tag('pdf.png'), document %></p>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+<% end %>

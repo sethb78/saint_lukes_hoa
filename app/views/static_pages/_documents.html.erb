@@ -1,0 +1,9 @@
+    <div class="span12">
+        <h3>Forms</h3>
+
+<% if user_signed_in? %>
+<p id="pdf_link"><%= link_to "Download Invoice (PDF)", "By-Laws.pdf" %></p>
+<% else %>
+<p> <%= link_to "Download Invoice (PDF)", new_user_session_path %></p>
+<% end %>
+    </div>

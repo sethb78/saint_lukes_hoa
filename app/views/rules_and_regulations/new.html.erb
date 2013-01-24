@@ -1,0 +1,12 @@
+
+  <%= form_for @rules_and_regulation, :html => {:multipart => true} do |f| %>
+    <%= f.hidden_field :DocumentType_id %>
+    <p>
+      <%= f.label :pdf_type, "Upload PDF: " %>
+      <%= f.file_field :pdf_type %>
+    </p>
+    
+        <p class ="center">
+      <%= f.submit "Add Photo", class: "btn btn-large btn-primary" %>
+    </p>
+  <% end %>

@@ -43,7 +43,7 @@ body {
         }
   }
 }
-.left-side-bar, .right-side-bar, .mid-left, .mid-right {
+.left-side-bar, .right-side-bar {
   background-color: #4C4C4C;
   margin: 5% 0 2% 0;
   padding: .5%;
@@ -51,12 +51,11 @@ body {
   h3 {
     color: white;
     line-height: 30px;
-    margin: 5% 0 2%;
+    margin: 2% 0;
     border-bottom: 1px dashed $maroon;
   }
   .span12, .span6 {
     margin-left: 0;
-    margin-bottom: 2%;
     background-color: #B3B3B3;
     text-align: center;
   }
@@ -68,10 +67,4 @@ body {
   }
 }
 
-.mid-left {
-  .span12 {
-    height: 400px;
-  }
-
-}
 

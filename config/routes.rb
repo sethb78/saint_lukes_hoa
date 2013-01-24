@@ -1,9 +1,18 @@
 Hoa::Application.routes.draw do
+  resources :documents
+
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
 
   devise_for :users
 
   resources :static_pages
   resources :upcoming_events
+  resources :document_types, :has_many => :rules_and_regulations
+  resources :rules_and_regulations
   resources :users do
     get 'approve', :on => :member
   end

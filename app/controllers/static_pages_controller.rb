@@ -8,4 +8,9 @@ class StaticPagesController < ApplicationController
   def location
   end
 
+  def home
+  		@documents_rules = Document.where(:doctype => "rules")
+  		@documents_other = Document.where(:doctype => "other")
+  end
+
 end
