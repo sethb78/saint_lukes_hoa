@@ -5,11 +5,11 @@ class DocumentsController < InheritedResources::Base
   		@documents_rules = Document.where(:doctype => "rules")
   		@documents_other = Document.where(:doctype => "other")
   		documents_meeting = Document.where(:doctype => "meetings")
-  		@documents_meeting = documents_meeting.all.sort_by(&:meeting_date).reverseend
+  		@documents_meeting = documents_meeting.all.sort_by(&:meeting_date).reverse
   	end
-
+  	
 	def show
 		flash[:error] = "This document is restricted.  Please sign in or register to proceed."
-	    redirect_to root_path
+	    redirect_to new_user_session_path
 	end
 end

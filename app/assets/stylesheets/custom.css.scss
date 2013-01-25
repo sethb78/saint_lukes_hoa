@@ -66,5 +66,39 @@ body {
     }
   }
 }
+.span7 {
+  .alert {
+    border: none;
+    background-color: white;
+    color: white;
+  }
+}
 
+.form-layout {
+  color: $maroon;
+  margin: 8% 0;
+  padding: 5%;
+  border: 1px solid $maroon;
+  background-color: $light-grey !important;
+  h2 {
+    color: $maroon;
+    text-align: center;
+  }
+  input[type="submit"] {
+    padding: 1%;
+  }
+}
 
+.upcoming-events {
+  font-size: 1em;
+  border-bottom: 1px dashed $maroon;
+  margin-bottom: 2%;
+}
+
+.calendar-event{
+    color: $maroon;
+  margin: 8% 0;
+  padding: 5%;
+  border: 1px solid $maroon;
+  background-color: $light-grey !important;
+}

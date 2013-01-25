@@ -26,11 +26,12 @@
 }
 
 .contact-us {
-	margin: 2% 5%;
-	min-height: 400px;
-	h2 {
-		color: $maroon;
-	}
+	min-height: 450px;
+	color: $maroon;
+	margin: 2% 0;
+	padding: 2% 5%;
+	border: 1px solid $maroon;
+	background-color: $light-grey !important;
 	li {
 		list-style: none;
 		width: 100%;
@@ -59,3 +60,4 @@
     left: 380px
     }
 }
+

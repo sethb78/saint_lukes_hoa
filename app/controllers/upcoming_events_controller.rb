@@ -1,7 +1,9 @@
 class UpcomingEventsController < ApplicationController
-  
-before_filter :authenticate_user!
-
   def index
+  	@event = UpcomingEvent.all
   end
+
+  	def show
+  		@upcoming_event = UpcomingEvent.find(params[:id])
+  	end
 end

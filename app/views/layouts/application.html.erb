@@ -26,22 +26,22 @@
 						<%= render 'layouts/left_side_bar' %>
 					</div>
 				</div>
-				<div class="span8">
+				<div class="span7">
 					<% flash.each do |name, msg| %>
 				        <%= content_tag :div, msg, id: "flash_#{name}" %>
 				    <% end %>
 					<%= yield %>
 				</div>
-				<div class="span2 right-side-bar">
+				<div class="span3 right-side-bar">
 					<div class="span12">
-						<% if 2==2 %>
-							<div id="admin-link">
-								<h3>Administrative</h3>
-								<p><%= link_to "Calendar", upcoming_events_path %>
+						<h3><%= image_tag('upcoming.jpg') %></h3>
+						<% @event.each do |event| %>
+							<div class="upcoming-events">
+								<p><%= event.event_start.strftime("%b %d at %I:%M %p") %></p>
+								<%= event.title %>
+								<p> <%= link_to 'more info', @event %></p>
 							</div>
 						<% end %>
-						<h3><%= image_tag('upcoming.jpg') %></h3>
-						<p><%= image_tag('calendar.jpg') %></p>
 					</div>
 				</div>
 			</div>
