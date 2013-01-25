@@ -45,6 +45,10 @@ facade.jpg: facade-431c88b81fb3ad1499fc3e31e07d8a40.jpg
 facade/index.jpg: facade-431c88b81fb3ad1499fc3e31e07d8a40.jpg
 favicon.ico: favicon-369ba83e99ac777032238cd29e0f358c.ico
 favicon/index.ico: favicon-369ba83e99ac777032238cd29e0f358c.ico
+governing_documents.png: governing_documents-0e6afb9ceaf80c770ae8660c3ff10202.png
+governing_documents/index.png: governing_documents-0e6afb9ceaf80c770ae8660c3ff10202.png
+governing_documents2.png: governing_documents2-6a3c5447f1208c728c8663d7fe7c5d2a.png
+governing_documents2/index.png: governing_documents2-6a3c5447f1208c728c8663d7fe7c5d2a.png
 nelson1.jpeg: nelson1-d01d07a00e3419386c1ab1bdf113ae3e.jpeg
 nelson1/index.jpeg: nelson1-d01d07a00e3419386c1ab1bdf113ae3e.jpeg
 nelson2.jpeg: nelson2-c6c44b40421241a9d97d2cd6cf9bd9d8.jpeg
@@ -69,8 +73,8 @@ application.js: application-9c25c1b08c08985ed81374cc363fcad3.js
 application/index.js: application-9c25c1b08c08985ed81374cc363fcad3.js
 active_admin.css: active_admin-f58fc98e42733be6473403cf53156e11.css
 active_admin/index.css: active_admin-f58fc98e42733be6473403cf53156e11.css
-application.css: application-94a530ca306d80a63f627a3f71c65a81.css
-application/index.css: application-94a530ca306d80a63f627a3f71c65a81.css
+application.css: application-03efa9614232a235a9a54a6051fbf869.css
+application/index.css: application-03efa9614232a235a9a54a6051fbf869.css
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-7d1197a52442bc56fcad60d0390f4b32.png
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100/index.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-7d1197a52442bc56fcad60d0390f4b32.png
 jquery-ui/ui-bg_flat_75_ffffff_40x100.png: jquery-ui/ui-bg_flat_75_ffffff_40x100-3c4b974defa5e8bdaf8a603034c4435e.png
