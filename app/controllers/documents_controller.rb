@@ -1,11 +1,15 @@
 class DocumentsController < InheritedResources::Base
+	before_filter :authenticate_user!
 
-def index 
-	@documents = Document.all
-end
+	def index 
+  		@documents_rules = Document.where(:doctype => "rules")
+  		@documents_other = Document.where(:doctype => "other")
+  		documents_meeting = Document.where(:doctype => "meetings")
+  		@documents_meeting = documents_meeting.all.sort_by(&:meeting_date).reverseend
+  	end
 
-def show
-	flash[:error] = "Only Registered Users May View This Document"
-    redirect_to root_path
+	def show
+		flash[:error] = "This document is restricted.  Please sign in or register to proceed."
+	    redirect_to root_path
 	end
 end

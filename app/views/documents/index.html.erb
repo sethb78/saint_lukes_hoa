@@ -1,0 +1,31 @@
+<div class="document-index">
+		<div class="row-fluid">
+			<div class="span6">
+			    <div class="span12">
+			        <h3>Governing Documents</h3>
+			        <% @documents_rules.each do |document| %>
+						<p> <%= document.title %> <%= link_to image_tag('pdf.png'), document.path, target: "blank" %></p>
+					<% end %>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="span12 minutes">
+					<h3>Meeting Minutes</h3>
+					<% @documents_meeting.each do |document| %>
+						<p><%= document.title %> <%= link_to image_tag('pdf.png'), document.path %></p>
+					<% end %>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6">
+				<div class="span12">
+					<h3>Reserve Study</h3>
+					<% @documents_other.each do |document| %>
+					<p> <%= document.title %> <%= link_to image_tag('pdf.png'), document.path, target: "blank" %></p>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
