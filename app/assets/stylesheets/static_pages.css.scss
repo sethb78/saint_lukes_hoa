@@ -17,7 +17,7 @@
 		background-color: light-grey;
 	}
 }
-.location, .contact-us {
+.location, .contact-us, .hero-unit {
 	text-align: center;
 	min-height: 265px;
   background-color: white !important;
@@ -78,4 +78,26 @@
 		}
 	}
 }
+
+.hero-unit {
+  text-align: justify;
+  background-color: white !important;
+  margin: 2% 0%;
+  padding: 2% !important;
+  border: 1px solid $maroon;
+  border-radius:10px;
+  .btn-primary {
+    background-color: $maroon;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: $light-grey;
+    color: $light-grey !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	}
+	.btn-primary:hover{
+		background-color: $light-grey;
+		color: $maroon !important;
+	}
+}
+
 

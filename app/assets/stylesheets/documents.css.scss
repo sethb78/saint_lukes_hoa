@@ -20,19 +20,23 @@
 		text-align: center
 	}
 	p {
+		border-radius:2px;
 	    background-color: lighten($light-grey, 10%);
 	    color: $maroon;
-	    font-size: 1.4em;
+	    font-size: 1.2em;
 	    margin-bottom: 5%;
-	    margin-left: 5%;
-	    margin-right: 5%;
+	    margin-left: 2%;
+	    margin-right: 2%;
 	    padding: 1%;
 	}
-	a:hover {
-		background: none;
-	}
 	.minutes {
-		font-size: .7em;
+		font-size: .9em;
+	}
+	a {
+		color: $maroon !important;
+	}
+	a:hover {
+		color: lighten($maroon, 10%) !important;
 	}
 }
 
