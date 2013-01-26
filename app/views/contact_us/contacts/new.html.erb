@@ -1,3 +1,4 @@
+<%= provide(:title, 'Questions/Comments') %>
 <div class="contact-us">
   <h2><%= t('.questions_/_comments') %></h2>
   <%= form_for @contact, :url => contacts_path, :html => {:class => 'formtastic'} do |f| %>
