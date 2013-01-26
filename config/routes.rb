@@ -15,6 +15,7 @@ Hoa::Application.routes.draw do
   resources :rules_and_regulations
   resources :users do
     get 'approve', :on => :member
+    get 'make_admin', :on => :member
   end
 
   root to:'static_pages#home'

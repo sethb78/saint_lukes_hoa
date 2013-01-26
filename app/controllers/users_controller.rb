@@ -10,7 +10,7 @@ before_filter :verify_is_admin
 	  if params[:approved] == "false"
 	    @users = User.find_all_by_approved(false)
 	  else
-	    @users = User.all
+	    @users = User.find(:all, :conditions => ["id != 1"])
 	  end
 	end
 
@@ -20,6 +20,13 @@ before_filter :verify_is_admin
 		UserMailer.signup_confirmation(@user).deliver
 
 		redirect_to users_path, :action => "index", :approved => "false", notice: "#{@user.email} has been approved, and an email sent."
+	end
+
+	def make_admin
+		user = User.find(params[:id])
+		user.toggle!(:admin)
+		redirect_to users_path
+		flash[:sucess] = "#{user.name} has been updated"
 	end
 
 

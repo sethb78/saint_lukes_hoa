@@ -12,7 +12,7 @@
 		width: 100%;
 	}
 	td {
-		width: 30%;
+		width: 12%;
 	}
 	th {
 		border-bottom: 1px solid black;
@@ -20,5 +20,13 @@
 	a:active{
 		outline: 1px red
 	}
-
+	.unit {
+		width: 5%;
+	}
+	.links {
+		padding: 2%;
+		a{
+			font-size: 1em
+		}
+	}
 }
