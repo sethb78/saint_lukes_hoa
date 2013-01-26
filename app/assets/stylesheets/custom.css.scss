@@ -44,6 +44,7 @@ body {
   }
 }
 .left-side-bar, .right-side-bar {
+  border-radius: 10px;
   background-color: #4C4C4C;
   margin: 5% 0 2% 0;
   padding: .5%;
@@ -79,7 +80,8 @@ body {
   margin: 8% 0;
   padding: 5%;
   border: 1px solid $maroon;
-  background-color: $light-grey !important;
+  background-color:  white !important;
+  border-radius: 10px;
   h2 {
     color: $maroon;
     text-align: center;

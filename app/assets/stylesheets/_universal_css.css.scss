@@ -3,6 +3,7 @@ $maroon: #422121;
 $light-grey: #B3B3B3;
 
 
+
 @mixin background_image($bottom_color,$top_color) {
    	background-image: linear-gradient( bottom, $bottom_color, $top_color 50%);
 	background-image: -o-linear-gradient( bottom, $bottom_color, $top_color 50%);

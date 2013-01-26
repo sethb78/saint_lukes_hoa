@@ -20,18 +20,20 @@
 .location, .contact-us {
 	text-align: center;
 	min-height: 265px;
-  background-color: $light-grey;
-  margin: 2 0%;
+  background-color: white !important;
+  margin: 2% 0%;
   padding: .5%;
+  border: 1px solid $maroon;
+  border-radius:10px;
 }
 
 .contact-us {
 	min-height: 450px;
 	color: $maroon;
-	margin: 2% 0;
+	margin: 8% 0;
 	padding: 2% 5%;
 	border: 1px solid $maroon;
-	background-color: $light-grey !important;
+	border-radius: 10px;
 	li {
 		list-style: none;
 		width: 100%;

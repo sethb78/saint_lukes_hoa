@@ -12,7 +12,7 @@
 	     <div class="container">
 	     	<div class="span12">
 	     		<div id="user_nav">
-	     			<%= render 'layouts/user_nav' %>
+					<%= render 'layouts/topline_signin_bar' %>
 	     		</div>
 	     	</div>
 	 		<div class="row-fluid banner">
@@ -34,12 +34,11 @@
 				</div>
 				<div class="span3 right-side-bar">
 					<div class="span12">
-						<h3><%= image_tag('upcoming.jpg') %></h3>
+						<h3>Upcoming Dates</h3>
 						<% @event.each do |event| %>
 							<div class="upcoming-events">
-								<p><%= event.event_start.strftime("%b %d at %I:%M %p") %></p>
-								<%= event.title %>
-								<p> <%= link_to 'more info', @event %></p>
+								<p><%= event.title %></p>
+								<p><%= event.event_start.strftime("%b %d at %I:%M %p") %> in the <%= event.location %></p>
 							</div>
 						<% end %>
 					</div>
