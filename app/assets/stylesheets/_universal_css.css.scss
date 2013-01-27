@@ -28,10 +28,10 @@ p {
 }
 
 a {
-	color: $maroon !important;
+	color: $maroon;
 }
 a:hover {
-	color: $light-grey !important;
+	color: $light-grey;
 	background-color: $maroon;
 }
 
@@ -71,8 +71,7 @@ a:hover {
 }
 .active {
 	a {
-		padding: 1%;
-		color: lighten($maroon, 25%) !important;
-		background-color: lighten($light-grey, 25%) !important;
+		color: lighten($maroon, 45%);
+		background-color: #B3B3B3 !important;
 	}
 }
