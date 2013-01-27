@@ -1,0 +1,9 @@
+<div class="board"><h1 class="center">Board of Directors</h1>
+	<% @board_member.each do |person| %>
+		<h4 class="underline"><%= person.position %></h4>
+		<p>
+			<%= person.name %><br />
+			<%= mail_to(person.email) %></p>
+		<% end %>
+
+</div>

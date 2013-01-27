@@ -17,7 +17,7 @@
 		background-color: light-grey;
 	}
 }
-.location, .contact-us, .hero-unit {
+.location, .contact-us, .hero-unit, .board {
 	text-align: center;
 	min-height: 265px;
   background-color: white !important;
@@ -97,6 +97,14 @@
 	.btn-primary:hover{
 		background-color: $light-grey;
 		color: $maroon !important;
+	}
+}
+
+.board{
+	text-align: left;
+	padding-left: 2%;
+	h4 {
+		margin-bottom: 0;
 	}
 }
 

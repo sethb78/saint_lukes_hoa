@@ -38,6 +38,9 @@ a:hover {
 .center {
 	text-align: center;
 }
+.underline {
+	text-decoration: underline;
+}
 
 .field_with_errors {
 	background-color: white;
@@ -65,4 +68,11 @@ a:hover {
     margin-bottom: -3%
   }
 
+}
+.active {
+	a {
+		padding: 1%;
+		color: lighten($maroon, 25%) !important;
+		background-color: lighten($light-grey, 25%) !important;
+	}
 }
