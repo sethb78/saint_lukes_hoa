@@ -21,6 +21,7 @@ Hoa::Application.routes.draw do
 
   match '/location', to: 'static_pages#location'
   match '/contact', to: 'contact_us/contacts#new'
+  match '/issues/concerns', to: 'static_pages#issues_concerns'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

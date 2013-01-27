@@ -17,7 +17,7 @@
 		background-color: light-grey;
 	}
 }
-.location, .contact-us, .hero-unit, .board {
+.location, .contact-us, .hero-unit, .board, .issues-concerns {
 	text-align: center;
 	min-height: 265px;
   background-color: white !important;
@@ -103,9 +103,24 @@
 .board{
 	text-align: left;
 	padding-left: 2%;
+	padding-bottom: 2%;
+	h3 {
+		color: $maroon;
+	}
 	h4 {
-		margin-bottom: 0;
+		margin: 12px 0 0;
+	}
+	p {
+		line-height: 14px;
 	}
 }
 
+.issues-concerns {
+	padding: 0 5% 5%;
+	text-align: justify;
+	h3{
+		margin-bottom: 5%;
+		color: $maroon;
+	}
 
+}

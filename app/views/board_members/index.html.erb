@@ -1,4 +1,5 @@
-<div class="board"><h1 class="center">Board of Directors</h1>
+<%= provide(:title, "Board of Directors") %>
+<div class="board"><h3 class="center">Board of Directors</h3>
 	<% @board_member.each do |person| %>
 		<h4 class="underline"><%= person.position %></h4>
 		<p>
