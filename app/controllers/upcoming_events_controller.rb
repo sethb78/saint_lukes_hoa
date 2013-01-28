@@ -1,6 +1,6 @@
 class UpcomingEventsController < ApplicationController
   def index
-  	@event = UpcomingEvent.find, conditions: [:date > time.now && :date < 6.months.from_now ]
+  @event = UpcomingEvent.find(:all, :conditions => ["event_start between ? and ?", DateTime.now, (DateTime.now + 6.months)])
   end
 
   	def show
