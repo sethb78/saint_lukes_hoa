@@ -4,7 +4,9 @@
 		<h4 class="underline"><%= person.position %></h4>
 		<p>
 			<%= person.name %><br />
-			<%= mail_to(person.email) %></p>
+			Unit <%= person.unit %> <br />
+			<%= mail_to(person.email) %><br />
+			<%= person.phone %></p>
 		<% end %>
 
 </div>

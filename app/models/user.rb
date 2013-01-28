@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
-  attr_accessible :email, :password, :password_confirmation, :unit, :approved, :name
+  attr_accessible :admin, :email, :password, :password_confirmation, :unit, :approved, :name
 	after_create :send_admin_mail
 
 	validates :name, presence: true

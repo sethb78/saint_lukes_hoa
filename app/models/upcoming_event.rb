@@ -1,3 +1,3 @@
 class UpcomingEvent < ActiveRecord::Base
-  attr_accessible :date, :description, :time, :title
+  attr_accessible :description, :title, :event_start, :location
 end
