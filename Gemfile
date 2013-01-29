@@ -13,6 +13,8 @@ gem 'jquery-rails'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails', '2.10.0'	
+	gem 'guard-spork', '1.2.0'
+  	gem 'spork', '0.9.2'
 end
 
 group :assets do
@@ -31,7 +33,7 @@ group :development do
 end
 
 group :test do
-   	gem 'capybara'
+   	gem 'capybara','1.1.2'
     gem 'factory_girl_rails', '4.1.0' # Used to define a User object.
-    gem 'guard-rspec'
+    gem 'guard-rspec', '0.5.5'
 end

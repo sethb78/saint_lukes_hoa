@@ -3,15 +3,16 @@ require 'spec_helper'
 describe "StaticPages" do
 
 	subject { page }
-	let(:user) { FactoryGirl.create(:user) }
-	before { @upcoming_event = UpcomingEvent.new(title: "HOA Meeting", event_start: DateTime.now, location: "4th Floor Lobby") }
-	before { @upcoming_event_10_months = UpcomingEvent.new(title: "HOA Meeting 10 months", event_start: 10.months.from_now, location: "4th Floor Lobby") }
 
+	before do
+		UpcomingEvent.create!(title: "HOA Meeting", event_start: DateTime.now, location: "4th Floor Lobby")
+		UpcomingEvent.create!(title: "HOA Meeting in 7 Months", event_start: 7.months.from_now, location: "4th Floor Lobby")
+	end
 
 	shared_examples_for "all static pages" do
 		it { should have_selector('title', text: full_title(page_title)) }
-		it { should have_selector('div.upcoming-events', text: @upcoming_event.title) }
-		it { should_not have_selector('div.upcoming-events', text: @upcoming_event_10_months.title) }
+		it { should have_selector('div.upcoming-events', text: "HOA Meeting") }
+		it { should_not have_selector('div.upcoming-events', text: "HOA Meeting in 7 Months") }
 
 	end
 
@@ -54,8 +55,20 @@ describe "StaticPages" do
 		end
 
 		describe "after signing in" do
-			before { sign_in(user) }
+	        let(:user) { FactoryGirl.create(:user) }
+	        before { sign_in user }
+			describe "board members page" do
+				before { visit board_members_path }
+				it { should have_selector('title', text: full_title('Board of Directors')) }
+			end
+			describe "documents page" do
+				before { visit documents_path }
+				it { should have_selector('title', text: full_title('Documents')) }			
+			end
+			describe "issues/concerns page" do
+				before { visit issues_concerns_path }
+				it { should have_selector('title', text: full_title('Issues and Concerns')) }
+			end
 		end
-
 	end
 end
