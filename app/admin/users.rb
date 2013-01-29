@@ -3,7 +3,6 @@ ActiveAdmin.register User do
     column :name
     column :unit
     column :email
-    column :approved
     column :admin
         default_actions
   end
@@ -13,7 +12,6 @@ ActiveAdmin.register User do
       f.input :name
       f.input :unit
       f.input :email
-      f.input :approved
       f.input :admin
     end
     f.buttons

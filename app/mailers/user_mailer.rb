@@ -16,7 +16,8 @@ end
 
 def new_user_waiting_for_approval(user)
 	@user = user
-	mail to: "saintlukeslofts@gmail.com", subject: "New User Requesting Approval"
+	mail to:("saintlukeslofts@gmail.com, rlklein@gmail.com"), subject: "New User Requesting Approval"
 end
 
 end
+
