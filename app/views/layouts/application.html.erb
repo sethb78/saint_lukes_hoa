@@ -25,7 +25,7 @@
 						<%= render 'layouts/left_side_bar' %>
 					</div>
 				</div>
-				<div class="span7">
+				<div class="span7 main-container">
 					<% flash.each do |name, msg| %>
 				        <%= content_tag :div, msg, id: "flash_#{name}" %>
 				    <% end %>
