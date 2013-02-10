@@ -15,19 +15,22 @@ body {
 
 
 #main-image{
-  float: none;
-      h1 {
-
+  h1 {
+    position: relative;
+    height: 200px;
+    width: 940px;   
+    overflow: hidden;
+    margin: auto;
     span {
-                  position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(banner.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
 .left-side-bar, .right-side-bar {
