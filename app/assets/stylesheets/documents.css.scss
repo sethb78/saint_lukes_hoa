@@ -4,16 +4,17 @@
 	padding: 5%; 
 	.span6 {
 		margin-top: 5%;
-		background-color: #4C4C4C;
+		background-color: inherit;
 		padding: .7%;
 		border-radius: 10px;
 	}
 	.span12 {  
 		background-color: $light-grey;
-		margin: 0;
+		margin: 0 0 40px;
 		padding: .5%;
-		border: 1px solid #422121;
+		border: 10px solid #4c4c4c;
 		margin-left: 0 !important;
+		border-radius: 10px;
 	}
 	h3 {
 		color: $maroon;

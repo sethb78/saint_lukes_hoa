@@ -6,6 +6,7 @@ class DocumentsController < InheritedResources::Base
   		@documents_other = Document.where(:doctype => "other")
   		documents_meeting = Document.where(:doctype => "meetings")
   		@documents_meeting = documents_meeting.all.sort_by(&:meeting_date).reverse
+      @documents_memorandums = Document.where(:doctype => "memorandums")
   	end
   	
 	def show

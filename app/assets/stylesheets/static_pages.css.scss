@@ -17,7 +17,7 @@
 		background-color: light-grey;
 	}
 }
-.location, .contact-us, .hero-unit, .board, .issues-concerns {
+.location, .contact-us, .hero-unit, .board, .issues-concerns{
 	text-align: center;
 	min-height: 265px;
   background-color: white !important;
@@ -123,4 +123,16 @@
 		color: $maroon;
 	}
 
+}
+.forget-password, .register-user {
+	text-align: left;
+	min-height: 265px;
+  	background-color: white !important;
+  	margin: 2%;
+  	padding: 2%;
+  	border: 1px solid $maroon;
+  	border-radius:10px;
+  	label {
+  		margin-bottom: -10px;
+  	}
 }

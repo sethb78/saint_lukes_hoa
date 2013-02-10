@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130128201206) do
+ActiveRecord::Schema.define(:version => 20130210204610) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(:version => 20130128201206) do
     t.string   "doctype"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "document"
   end
 
   add_index "documents", ["meeting_date"], :name => "index_documents_on_meeting_date"

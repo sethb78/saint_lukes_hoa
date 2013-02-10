@@ -1,7 +1,6 @@
 @import 'universal_css';
 
 body {  
-  background-color: red;
   min-height: 800px;
   padding-top: 1%;
 @include filter-gradient($outside_color: #666666, $middle_color: lighten(#666666, 50%));
@@ -14,23 +13,11 @@ body {
    background-size: cover;
 }
 
-#user_nav{
-  float: right;
-  padding-right: 10%;
-  margin-bottom: .5%;
-  a {
-    color: $maroon;
-  }
-}
 
 #main-image{
-  float: right;
-  h1 {
-    position: relative;
-    height: 200px;
-    width: 940px;
-    overflow: hidden;
-    margin: auto;
+  float: none;
+      h1 {
+
     span {
                   position: absolute;
             left: 0;
@@ -106,4 +93,46 @@ body {
   padding: 5%;
   border: 1px solid $maroon;
   background-color: $light-grey;
+}
+#login {
+  color: white;
+  margin-right: 30%;
+  float: right;
+  i {
+    margin: 3px 0 0 3px;
+  }
+
+  form {
+    position: absolute;
+    background: #666666;
+    z-index: 1;
+    padding: 1%;
+    opacity: .95;
+  }
+  #topline-link{
+    padding-right: 15px;
+    font-size: 15px;
+    margin-right: 17px;
+    background: url(arrows.png) no-repeat right;
+
+  }
+  label {
+    margin-bottom: -10px;
+  }
+  input[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 1%;
+  }
+  div {
+    cursor: auto;
+    padding: 0 14px;
+  }
+}
+#logged-in-user {
+  margin-right: 15%;
+  float: right;
+}
+#hidden{
+  display: none;
 }
