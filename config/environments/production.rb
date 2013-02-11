@@ -61,6 +61,10 @@ Hoa::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  AWS_ACCESS_KEY_ID = ENV['AMAZON_KEY_ID']
+  AWS_SECRET_ACCESS_KEY = ENV['AMAZON_SECRET_KEY']
+  AWS_S3_BUCKET = ENV['AMAZON_BUCKET_NAME']
+
 
   config.action_mailer.smtp_settings = {
   enable_starttls_auto: true,
