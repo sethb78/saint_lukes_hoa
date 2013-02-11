@@ -62,7 +62,6 @@ Hoa::Application.configure do
   config.active_support.deprecation = :notify
 
 
-
   config.action_mailer.smtp_settings = {
   enable_starttls_auto: true,
   address: 'smtp.gmail.com',

@@ -11,6 +11,7 @@ gem 'taps', '~> 0.3.24'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'carrierwave'
+gem 'fog'
 
 
 group :development, :test do
