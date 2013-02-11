@@ -1,33 +1,28 @@
-ActiveAdmin.register_page "Dashboard" do
-
-  menu :priority => 1, :label => proc{ I18n.t("active_admin.dashboard") }
-
-  content :title => proc{ I18n.t("active_admin.dashboard") } do
-    div :class => "blank_slate_container", :id => "dashboard_default_message" do
-      span :class => "blank_slate" do
-        span I18n.t("active_admin.dashboard_welcome.welcome")
-        small I18n.t("active_admin.dashboard_welcome.call_to_action")
-      end
+ActiveAdmin::Dashboards.build do
+  section "Documents" do
+    table_for Document.order("created_at desc").all do
+      column :doctype
+      column :title
     end
+    strong { link_to "Edit Documents", admin_documents_path, id: "link" }
+    strong { link_to "Add Document", new_admin_document_path, id: "link" }
+  end
 
-    # Here is an example of a simple dashboard with columns and panels.
-    #
-    # columns do
-    #   column do
-    #     panel "Recent Posts" do
-    #       ul do
-    #         Post.recent(5).map do |post|
-    #           li link_to(post.title, admin_post_path(post))
-    #         end
-    #       end
-    #     end
-    #   end
+  section" Board Members" do
+    table_for BoardMember.all.sort_by  &:heirarchy_rank do
+      column :position
+      column :name
+    end
+    strong { link_to "Edit Board Members", admin_board_members_path }
+  end 
 
-    #   column do
-    #     panel "Info" do
-    #       para "Welcome to ActiveAdmin."
-    #     end
-    #   end
-    # end
-  end # content
+  section "Upcoming Events" do
+    table_for UpcomingEvent.find(:all, :conditions => ["event_start > ? ", DateTime.now], :order => 'event_start') do
+      column :event_start
+      column :title
+      column :location
+    end
+    strong { link_to "Edit Events", admin_upcoming_events_path, id: "link" }
+    strong { link_to "Add Event", new_admin_upcoming_event_path, id: "link" }
+  end
 end
