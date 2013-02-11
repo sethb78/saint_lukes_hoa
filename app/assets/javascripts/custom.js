@@ -26,7 +26,7 @@ $('#login a:first').click(function(event){
 });
 
 
-
+$('#document_meeting_date_input').hide()
 
 });
 
