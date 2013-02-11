@@ -1,5 +1,5 @@
 Hoa::Application.configure do
- # Settings specified here will take precedence over those in config/application.rb
+  # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
   config.cache_classes = true
@@ -61,9 +61,14 @@ Hoa::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  # Log the query plan for queries taking more than this (works
+  # with SQLite, MySQL, and PostgreSQL)
+  # config.active_record.auto_explain_threshold_in_seconds = 0.5
   AWS_ACCESS_KEY_ID = ENV['AMAZON_KEY_ID']
   AWS_SECRET_ACCESS_KEY = ENV['AMAZON_SECRET_KEY']
   AWS_S3_BUCKET = ENV['AMAZON_BUCKET_NAME']
+
+
 
 
   config.action_mailer.smtp_settings = {
