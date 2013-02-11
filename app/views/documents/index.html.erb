@@ -5,13 +5,13 @@
 		  <div class="span12">
 		    <h3>Governing Documents</h3>
 		    <% @documents_rules.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.path %></p>
+					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
 				<% end %>
 			</div>
 			<div class="span12">
 				<h3>Reserve Study</h3>
 				<% @documents_other.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.path %></p>		
+					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
 				<% end %>
 			</div>
 		</div>
@@ -19,14 +19,14 @@
 			<div class="span12 minutes">
 				<h3>Meeting Minutes</h3>
 				<% @documents_meeting.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.path %></p>		
+					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
 				<% end %>
 			</div>
 			<% if @documents_memorandums.any? %>
 				<div class="span12">
 					<h3>Memorandums</h3>
 					<% @documents_memorandums.each do |document| %>
-						<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.path %></p>		
+					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
 					<% end %>
 				</div>
 			<% end %>
