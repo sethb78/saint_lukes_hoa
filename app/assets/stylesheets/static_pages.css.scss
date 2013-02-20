@@ -17,7 +17,7 @@
 		background-color: light-grey;
 	}
 }
-.location, .contact-us, .hero-unit, .board, .issues-concerns{
+.location, .contact-us, .board, .issues-concerns{
 	text-align: center;
 	min-height: 265px;
   background-color: white !important;
@@ -82,10 +82,11 @@
 .hero-unit {
   text-align: justify;
   background-color: white !important;
-  margin: 2% 0%;
   padding: 2% !important;
   border: 1px solid $maroon;
   border-radius:10px;
+  line-height: 20px;
+  margin-bottom: 0px !important;
   .btn-primary {
     background-color: $maroon;
     background-image: none;
@@ -98,6 +99,9 @@
 		background-color: $light-grey;
 		color: $maroon !important;
 	}
+  p {
+    padding: 0 1%;
+  }
 }
 
 .board{

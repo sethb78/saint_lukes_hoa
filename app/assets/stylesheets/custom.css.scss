@@ -14,7 +14,13 @@ body {
   background-image: none;
    background-size: cover;
 }
-
+.main-container {
+    border-radius: 10px;
+  background-color: #4C4C4C;
+  margin: 5% 0 2% 0;
+  padding: .5%;
+  border: 1px solid #422121;
+}
 
 #main-image{
   h1 {
