@@ -28,12 +28,12 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="span2 left-side-bar">
+				<div class="span3 left-side-bar">
 					<div class="span12">
 						<%= render 'layouts/left_side_bar' %>
 					</div>
 				</div>
-				<div class="span7 main-container">
+				<div class="span6 main-container">
 					<% flash.each do |name, msg| %>
 				        <%= content_tag :div, msg, id: "flash_#{name}" %>
 				    <% end %>
