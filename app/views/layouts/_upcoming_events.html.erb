@@ -1,0 +1,7 @@
+<h3>Upcoming Events</h3>
+	<% @event.each do |event| %>
+		<div class="upcoming-events">
+			<p><%= event.title %></p>
+			<p><%= event.event_start.strftime("%b %d at %I:%M %p") %> in the <%= event.location %></p>
+		</div>
+	<% end %>

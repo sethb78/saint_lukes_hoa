@@ -1,4 +1,9 @@
-    <div class="hero-unit">
+<div class="hero-unit">
+  <% if user_signed_in? && @blog %>
+      <h2 class="center"><%= @blog.title %></h2>
+      <% if @blog.tagline? %><p><%= @blog.tagline %></p><% end %>
+      <p><%= @blog.text %></p>
+  <% else %>
     <h1 class="center">Welcome</h1>
     <br />
     <p>Welcome to the official Saint Lukes Lofts homeowners association website.  We hope this becomes a beneficial tool for you to use to stay current with all matters pertaining to Saint Lukes Lofts.  Here you will find all of the governing documents, board meeting minutes, board contact information, and a schedule of upcoming events.</p>
@@ -6,4 +11,5 @@
     <p class="center"> Please register to continue.
     <%= link_to "Register", new_user_registration_path, :class => "btn btn-primary btn-large" %>
     </p>
-    </div>
+  <% end %>
+</div>

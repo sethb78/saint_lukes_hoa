@@ -21,19 +21,15 @@
 	text-align: center;
 	min-height: 265px;
   background-color: white !important;
-  margin: 2% 0%;
-  padding: .5%;
+  padding: 2%;
   border: 1px solid $maroon;
-  border-radius:10px;
+  border-radius:6px;
+  min-height: 500px;
 }
 
 .contact-us {
-	min-height: 450px;
 	color: $maroon;
-	margin: 8% 0;
-	padding: 2% 5%;
-	border: 1px solid $maroon;
-	border-radius: 10px;
+  min-height: 400px;
 	li {
 		list-style: none;
 		width: 100%;
@@ -66,8 +62,7 @@
 .location {
 	height: 400px;
 	.span6 {
-		padding: 2%;
-		overflow: hidden;
+  	overflow: hidden;
 	}
 	#address {
 		margin-top: 10%;
@@ -87,6 +82,7 @@
   border-radius:10px;
   line-height: 20px;
   margin-bottom: 0px !important;
+  min-height: 400px;
   .btn-primary {
     background-color: $maroon;
     background-image: none;

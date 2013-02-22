@@ -15,18 +15,19 @@ body {
    background-size: cover;
 }
 .main-container {
-    border-radius: 10px;
+  border-radius: 10px;
   background-color: #4C4C4C;
   margin: 5% 0 2% 0;
   padding: .5%;
   border: 1px solid #422121;
+  min-height: 500px;
 }
 
 #main-image{
   h1 {
     position: relative;
     height: 200px;
-    width: 940px;   
+    width: 100%;   
     overflow: hidden;
     margin: auto;
     span {
@@ -41,30 +42,6 @@ body {
     }
   }
 }
-.left-side-bar, .right-side-bar {
-  border-radius: 10px;
-  background-color: #4C4C4C;
-  margin: 5% 0 2% 0;
-  padding: .5%;
-  border: 1px solid #422121;
-  h3 {
-    color: white;
-    line-height: 30px;
-    margin: 2% 0;
-    border-bottom: 1px dashed $maroon;
-  }
-  .span12, .span6 {
-    margin-left: 0;
-    background-color: #B3B3B3;
-    text-align: center;
-  }
-  #admin-link{
-    h3 {
-      border: none;
-      color: $maroon;
-    }
-  }
-}
 .span7 {
   .alert {
     border: none;
@@ -74,8 +51,6 @@ body {
 }
 
 .form-layout {
-  color: $maroon;
-  margin: 8% 0;
   padding: 5%;
   border: 1px solid $maroon;
   background-color:  white;
@@ -92,11 +67,7 @@ body {
   }
 }
 
-.upcoming-events {
-  font-size: 1em;
-  border-bottom: 1px dashed $maroon;
-  margin-bottom: 2%;
-}
+
 
 .calendar-event{
     color: $maroon;
@@ -112,13 +83,13 @@ body {
   i {
     margin: 3px 0 0 3px;
   }
-
   form {
     position: absolute;
     background: #666666;
     z-index: 1;
     padding: 1%;
     opacity: .95;
+    display: none;
   }
   #topline-link{
     padding-right: 15px;
@@ -144,4 +115,49 @@ body {
 }
 #hidden{
   display: none;
+}
+
+#side-bar {
+  background-color: #B3B3B3;
+  margin-top: 5%;
+  background-color: #4C4C4C;
+  padding: .5%;
+  border: 1px solid #422121;
+  text-align: center;
+  border-radius: 10px;
+  h3 {
+    color: white;
+    border-bottom: 1px dashed $maroon;
+    line-height: 30px;
+    margin-bottom: 1px;
+  }
+  p {
+    font-size: 1em;
+  }
+  .span12 {
+    background-color: #B3B3B3;
+    padding: 2%;
+    border-radius: 6px;
+  }
+  .upcoming-events {
+    border-bottom: 1px dashed $maroon;
+  }
+}
+
+footer {
+  background-color: #B3B3B3;
+  position: relative;
+  top: 25px;
+  text-align: center;
+  border-radius: 6px;
+  h5 {
+    text-align: center;
+    line-height: 1px;
+  }
+  p {
+    text-align: center;
+  }
+  #developer {
+    padding-top: 12px;
+  }
 }
