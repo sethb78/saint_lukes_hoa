@@ -15,7 +15,7 @@ Hoa::Application.routes.draw do
     get 'approve', :on => :member
     get 'make_admin', :on => :member
   end
-  resources :board_members, only: [ :index
+  resources :board_members, only: [ :index ]
 
   root to:'static_pages#home'
 
