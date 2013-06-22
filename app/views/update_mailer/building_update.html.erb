@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html style="background-color: gray;">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    
+  </head>
+  <body style="width: 90%;margin: 0 auto;background-color: white;padding: 2%;">
+    <h2 class="center" style="text-align: center;"><%= @update.title %></h2>
+    <p><%= simple_format(@update.content.gsub(/n/, '<br/>')) %></p>
+    <p>Thank you, <br>
+      Saint Lukes Lofts Homeowners Association Board <br>
+      <%= link_to('www.saintlukeslofts.com', root_url) %>
+    </p>
+  </body>
+</html>

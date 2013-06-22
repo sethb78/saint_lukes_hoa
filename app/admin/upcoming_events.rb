@@ -4,6 +4,7 @@ ActiveAdmin.register UpcomingEvent do
   	column :description
   	column :event_start
   	column :location
+    column :agenda
   	default_actions
   end
 
@@ -13,6 +14,7 @@ ActiveAdmin.register UpcomingEvent do
   		f.input :description
   		f.input :event_start
   		f.input :location
+      f.input :agenda
   	end
   	f.actions
   end

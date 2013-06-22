@@ -3,5 +3,7 @@ class StaticPagesController < ApplicationController
  
     def home
       @blog = HomeBlog.last
+        @update = Update.order('created_at DESC').find(:all, :conditions => ["created_at between ? and ?", (DateTime.now - 1.month), DateTime.now]).first
+
     end
 end

@@ -1,6 +1,9 @@
 Hoa::Application.routes.draw do
 
 
+  resources :updates
+
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

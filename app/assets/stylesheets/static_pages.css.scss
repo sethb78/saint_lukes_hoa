@@ -70,12 +70,45 @@
 			font-size: 20px;
 			color: $maroon;
 			margin-top: 1%;
-		}
+    }
 	}
 }
 
+#flash_notice {
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+.updates-homepage {
+  background-color: white !important;
+  border: 5px dashed red;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px  #422121;
+  color: black;
+  h3 {
+    margin: 0;
+    background-color: red;
+    color: yellow;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  h4{
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  p {
+    padding: 0 2% 1%;
+    font-size: 16px;
+    a.update_link{
+      color: red !important;
+    }
+    a.update_link:hover {
+      background-color: none;
+    }
+  }
+}
 .hero-unit {
-  text-align: justify;
+  text-align: left;
   background-color: white !important;
   padding: 2% !important;
   border: 1px solid $maroon;

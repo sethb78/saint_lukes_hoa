@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "saintlukeslofts@gmail.com"
+  default from: "executiveboard@saintlukeslofts.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -16,7 +16,7 @@ end
 
 def new_user_waiting_for_approval(user)
 	@user = user
-	mail to:("saintlukeslofts@gmail.com, rlklein@gmail.com"), subject: "New User Requesting Approval"
+	mail to:("executiveboard@saintlukeslofts.com, rlklein@gmail.com"), subject: "New User Requesting Approval"
 end
 
 end

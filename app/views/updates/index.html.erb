@@ -1,0 +1,12 @@
+<div class="update_index">
+  <%= provide(:title, "Updates Index") %>
+  <h1 class="center"> Building Updates </h1>
+  <% @updates.each do |update| %>
+    <ul>
+      <li>
+        <%= "#{update.title}(#{update.updated_at.strftime("%m/%d/%Y") })..."  %>
+        <%= link_to("view update", update) %>
+      </li>
+    </ul>
+  <% end %>
+</div>

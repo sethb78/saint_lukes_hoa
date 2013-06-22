@@ -1,7 +1,13 @@
-<h3>Upcoming Events</h3>
-	<% @event.each do |event| %>
-		<div class="upcoming-events">
-			<p><%= event.title %></p>
-			<p><%= event.event_start.strftime("%b %d at %I:%M %p") %> in the <%= event.location %></p>
-		</div>
-	<% end %>
+	<% if @event.any? %>
+    <h3>Upcoming Events</h3>
+    <% @event.each do |event| %>
+  		<div class="upcoming-events">
+  			<p class="underline center"><%= event.title %></p>
+  			<p><span class= "bold">When:</span>  <%= event.event_start.strftime("%b %d at %I:%M %p") %></p>
+        <p><span class= "bold">Where:</span>   <%= event.location %></p>
+        <% if event.agenda? %>
+          <p class="agenda center bold underline"><%= link_to "click here to view agenda", event.agenda_url.to_s%></p>
+        <% end %>
+  		</div>
+  	<% end %>
+<%end %>

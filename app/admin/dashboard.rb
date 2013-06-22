@@ -16,6 +16,16 @@ ActiveAdmin::Dashboards.build do
     strong { link_to "Edit Board Members", admin_board_members_path }
   end 
 
+  section "Updates" do
+    table_for Update.order("created_at DESC").all do
+      column :title
+      column :created_at
+    end
+  strong { link_to "Edit Updates", admin_updates_path }
+end
+
+
+
   section "Upcoming Events" do
     table_for UpcomingEvent.find(:all, :conditions => ["event_start > ? ", DateTime.now], :order => 'event_start') do
       column :event_start

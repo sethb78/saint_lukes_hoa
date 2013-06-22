@@ -67,7 +67,12 @@ body {
   }
 }
 
-
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
 
 .calendar-event{
     color: $maroon;
@@ -141,6 +146,11 @@ body {
   }
   .upcoming-events {
     border-bottom: 1px dashed $maroon;
+    padding: 8px;
+    text-align: left;
+    .agenda {
+      margin-top: 2px;
+    }
   }
 }
 
@@ -159,5 +169,19 @@ footer {
   }
   #developer {
     padding-top: 12px;
+  }
+}
+
+.update_show, .update_index{
+  background: white;
+  padding: 2%;
+}
+.update_show {
+  h3, h5 {
+    margin: 0;
+    line-height: 1;
+  }
+  p {
+    margin: 10px 0;
   }
 }

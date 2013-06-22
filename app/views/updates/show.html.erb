@@ -1,0 +1,7 @@
+<%= provide(:title, @update.title) %>
+<div class= "update_show">
+  <p><%= link_to "View All Board Messages", updates_path %></p>
+  <h3 class="center"><%= @update.title %></h3>
+  <h5 class="center"> <% if @update.created_at == @update.updated_at %>posted:  <% else %> updated:  <% end %> <%= @update.updated_at.strftime("%m/%d/%Y") %></h5>
+  <p><%= simple_format(@update.content.gsub(/\n/, '<br/>')) %></p>
+</div>
