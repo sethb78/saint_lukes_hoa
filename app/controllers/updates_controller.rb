@@ -1,6 +1,6 @@
 class UpdatesController < ApplicationController
 before_filter :verify_is_admin, only: [:new, :create, :update]
-before_filter :user_signed_in?
+    before_filter :authenticate_user!
 
 def index
   @updates=Update.order("created_at DESC").all
