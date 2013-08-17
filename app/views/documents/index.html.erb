@@ -9,7 +9,7 @@
 				<% end %>
 			</div>
 			<div class="span12">
-				<h3>Reserve Study</h3>
+				<h3>Other Documents</h3>
 				<% @documents_other.each do |document| %>
 					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
 				<% end %>
