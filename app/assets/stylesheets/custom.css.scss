@@ -158,7 +158,6 @@ body {
   background-color: $light-grey;
 }
 #login {
-  color: white;
   margin-right: 30%;
   float: right;
   i {
@@ -166,10 +165,9 @@ body {
   }
   form {
     position: absolute;
-    background: #666666;
+    background: whitesmoke;
     z-index: 1;
     padding: 1%;
-    opacity: .95;
     display: none;
   }
   #topline-link{
@@ -177,6 +175,9 @@ body {
     font-size: 15px;
     margin-right: 17px;
   }
+   a#topline-link {
+      color: lighten(pink, 10%);
+    }
   label {
     margin-bottom: -10px;
   }
