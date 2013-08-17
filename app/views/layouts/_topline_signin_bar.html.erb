@@ -2,7 +2,7 @@
 <div class="span6">
   <% if user_signed_in? %>
   	<div id="logged-in-user">
-  		Signed in as <%= current_user.name %>. Not you?
+  		Signed in as <%= current_user.name.titleize %>.&nbsp;&nbsp;Not you?
   		<%= link_to "Sign Out", destroy_user_session_path %>
   	</div>
   <% else %>

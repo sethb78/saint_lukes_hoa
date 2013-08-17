@@ -1,36 +1,37 @@
 <%= provide(:title, 'Documents') %>
 <div class="document-index">
+<h3 class="center">Documents&nbsp;(&nbsp;<%= link_to image_tag('pdf.png') %>&nbsp;)</h3>
 	<div class="row-fluid">
 		<div class="span6">
 		  <div class="span12">
-		    <h3>Governing Documents</h3>
+		    <h4>Governing Documents</h4>
 		    <% @documents_rules.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
+					<p><%= link_to truncate(document.title, length: 40) , document.document_url.to_s %></p>		
 				<% end %>
 			</div>
 			<div class="span12">
-				<h3>Other Documents</h3>
+				<h4>Other Documents</h4>
 				<% @documents_other.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
+					<p><%= link_to truncate(document.title, length: 40) , document.document_url.to_s %>  </p>		
 				<% end %>
 			</div>
 		</div>
 		<div class="span6">
 			<div class="span12 minutes">
-				<h3>Meeting Minutes</h3>
-				<% @documents_meeting.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
+				<h4>Meeting Minutes</h4>
+				<% @documents_meeting[0..2].each do |document| %>
+					<p><%= link_to truncate(document.title, length: 40) , document.document_url.to_s, title: document.title %></p>		
 				<% end %>
+				<p><%= link_to "click for meeting archives", meeting_minutes_archives_path, class: "link_to_archives" %></p>
 			</div>
 			<% if @documents_memorandums.any? %>
 				<div class="span12">
-					<h3>Memorandums</h3>
+					<h4>Memorandums</h4>
 					<% @documents_memorandums.each do |document| %>
-					<p><%= link_to document.title, document.document_url.to_s %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %></p>		
+					<p><%= link_to truncate(document.title, length: 40) , document.document_url.to_s %>  </p>		
 					<% end %>
 				</div>
 			<% end %>
 		</div>
 	</div>
-</div>
-
+	</div>

@@ -2,11 +2,11 @@
 <div class="board"><h3 class="center">Board of Directors</h3>
 	<% @board_member.each do |person| %>
 		<h4 class="underline"><%= person.position %></h4>
-		<p>
-			<%= person.name %><br />
+		<address>
+			<strong><%= person.name %></strong><br />
 			Unit <%= person.unit %> <br />
 			<%= mail_to(person.email) %><br />
-			<%= person.phone %></p>
+			<%= person.phone %></address>
 		<% end %>
 
 </div>
