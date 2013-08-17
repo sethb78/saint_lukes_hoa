@@ -1,11 +1,11 @@
 <%= provide(:title, "Meeting Archives") %>
 <div class="meeting_index">
-<h3 class="center">Meeting Archives</h3>
+<h3 class="center">Meeting Archives&nbsp;(&nbsp;<%= image_tag('pdf.png') %>&nbsp;)</h3>
 <ul class="unstyled">
 <% @documents_meetings.each do |document| %>
 
   <li>
-       <%= link_to document.title, document.document_url.to_s, title: document.title %> <%= link_to image_tag('pdf.png'), document.document_url.to_s  %>
+       <%= link_to document.title, document.document_url.to_s %>
            </li>
         <% end %>
     
