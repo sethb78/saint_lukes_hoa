@@ -171,6 +171,16 @@ body {
     padding: 1%;
     display: none;
   }
+  .btn {
+      background: none $maroon;
+      color: whitesmoke;
+      text-shadow: none;
+      padding: 2px;
+      &:hover {
+        background: lighten($maroon, 10%)
+      }
+    }
+
   #topline-link{
     padding-right: 15px;
     font-size: 15px;
@@ -182,6 +192,7 @@ body {
   label {
     margin-bottom: -20px;
   }
+  label.label_remember_me {margin-bottom: -10px}
   input[type="submit"] {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -396,7 +407,11 @@ div {
       background: none $maroon;
       color: whitesmoke;
       text-shadow: none;
+      padding: 2px;
     }
+          &:hover {
+        background: lighten($maroon, 10%)
+      }
   }
 }
 
