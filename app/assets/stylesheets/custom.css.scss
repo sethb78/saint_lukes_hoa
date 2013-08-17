@@ -160,6 +160,7 @@ body {
 #login {
   margin-right: 30%;
   float: right;
+  color: #422121;
   i {
     margin: 3px 0 0 3px;
   }
@@ -179,7 +180,7 @@ body {
       color: lighten(pink, 10%);
     }
   label {
-    margin-bottom: -10px;
+    margin-bottom: -20px;
   }
   input[type="submit"] {
     margin-top: 15px;
