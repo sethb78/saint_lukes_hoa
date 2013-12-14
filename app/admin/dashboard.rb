@@ -1,4 +1,5 @@
 ActiveAdmin::Dashboards.build do
+
   section "Documents" do
     table_for Document.order("created_at desc").all do
       column :doctype
