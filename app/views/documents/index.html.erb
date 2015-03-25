@@ -34,7 +34,7 @@
 			<% end %>
 			<% if @documents_financials.any? %>
 				<div class="span12">
-					<h4>Memorandums</h4>
+					<h4>Financials</h4>
 					<% @documents_financials.each do |document| %>
 					<p><%= link_to truncate(document.title, length: 40) , document.document_url.to_s %>  </p>		
 					<% end %>
