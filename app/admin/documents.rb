@@ -9,7 +9,7 @@ ActiveAdmin.register Document do
   form do |f|
     f.inputs "Documents" do
       f.semantic_errors *f.object.errors.keys
-      f.input :doctype, :as => :select, :collection =>["rules","meetings", "other", "memorandums"]
+      f.input :doctype, :as => :select, :collection =>["rules","meetings", "other", "memorandums", "financials"]
       f.input :title
       f.input :document
       f.input :meeting_date

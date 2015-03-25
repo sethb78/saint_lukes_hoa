@@ -5,7 +5,7 @@ class Document < ActiveRecord::Base
   validates :doctype, presence: true
   validates :document, presence: true
   validates :title, presence: true
-  validates :doctype, :inclusion => {:in => ["rules","meetings", "other", "memorandums"]}
+  validates :doctype, :inclusion => {:in => ["rules","meetings", "other", "memorandums", "financials"]}
   validates :meeting_date, presence: true, :if => :a_meeting
 
   def a_meeting
