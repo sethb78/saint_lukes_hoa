@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'carrierwave'
 gem 'fog'
+gem 'jbuilder', '~> 2.0'
 
 
 group :development, :test do
