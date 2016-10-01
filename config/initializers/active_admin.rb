@@ -1,5 +1,7 @@
+require 'activeadmin'
 ActiveAdmin.setup do |config|
-
+config.authentication_method = false
+config.current_user_method   = false
   # == Site Title
   #
   # Set the title that is displayed on the main layout

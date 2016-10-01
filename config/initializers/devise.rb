@@ -3,7 +3,7 @@
 Devise.setup do |config|
   # Configure the e-mail address which will be shown in DeviseMailer.
   config.mailer_sender = "saintlukeslofts@gmail.com"
-
+config.secret_key = 'a862be2b1057345c00eafe4c92ae50853a0a3317b80d4f7b9ce49b1e30c248ecc1ffc3266ccf2e102d7b1156416377470b03e534fc2eef0f93028f9750f67840'
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is
   # just :email. You can configure it to use [:username, :subdomain], so for
