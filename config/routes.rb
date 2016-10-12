@@ -2,11 +2,11 @@ Hoa::Application.routes.draw do
 
 
   resources :updates
-
+  root to:'static_pages#home'
 
   ActiveAdmin.routes(self)
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  #devise_for :admin_users, ActiveAdmin::Devise.config
 
 
   devise_for :users
@@ -20,7 +20,6 @@ Hoa::Application.routes.draw do
   end
   resources :board_members, only: [ :index ]
 
-  root to:'static_pages#home'
 
   match '/location', to: 'static_pages#location'
   match '/contact', to: 'contact_us/contacts#new'
